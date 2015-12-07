@@ -24,13 +24,18 @@
   - Maps each output in layout to channels.
 
 
-## Top-level requirements
+## High-level requirements
 
 - Create and edit layouts.
   - Graphical editor for making and arranging new elements.
 - Create and edit sequences.
   - Needs to sustain updates to layout or music file without affecting
     existing DMX data.
+  - Need to visualize what sequence looks like digitally.
 - Merge sequences automatically
   - Sequences must have same music and layout
-  - Sub-sequences with sections of layout or time disabled.
+  - Distribute sequences to others
+    - Sub-sequences with sections of layout or time disabled.
+- Create and edit mappings.
+  - Graphical editor for mappings.
+- All editors must run cross platform (Windows, Mac, Linux, BSD).
