@@ -46,7 +46,7 @@
     - Deleting DMX data unintentionally.
 
 
-## DMX Execution requirementts
+## DMX Execution requirements
 
 - Send DMX data over Enttec USB DMX Pro protocol.
 - Output DMX data and play music simultaneously.
