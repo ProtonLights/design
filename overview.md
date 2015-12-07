@@ -22,6 +22,20 @@
 - Mapping
   - Linked to a layout.
   - Maps each output in layout to channels.
+- Command
+  - Represents an arbitrary set of DMX outputs, unattached to music.
+  - Is an enumeration:
+    - All channels to a value.
+    - All channels periodically fade on/off.
+    - 1 channel to a value.
+    - Continuously run a set of commands.
+- Playlist
+  - An ordered list of sequences.
+- Show
+  - 1 layout, 1 mapping, 1 playlist.
+  - Information on what to do between songs and before/after the show.
+    - How to fade in and out.
+    - Whether to wait, run commands, or continue.
 
 
 ## Sequence Editor requirements
@@ -44,28 +58,20 @@
     - Multiple outputs to one channel.
     - Splitting sequences that overlap.
     - Deleting DMX data unintentionally.
+  - Use simple and easily understood storage format for files.
 
 
-## DMX Execution requirements
+## Show Execution requirements
 
 - Send DMX data over Enttec USB DMX Pro protocol.
 - Output DMX data and play music simultaneously.
   - Music and DMX must always be within 50 ms of each other.
   - Adjustable delay of either music or DMX to keep in time.
 - Play, pause, and seek into a sequence.
-- Queue multiple sequences into an ordered playlist.
-  - Play sequences in order with appropriate timing and fades in/out.
+- Play sequences in order with appropriate timing and fades in/out.
   - Play arbitrary sequences in a playlist.
-- Execute simple commands
-  - All on/off.
-  - Turn on 1 channel
-    - Turn on block of channels.
-  - Turn on 1 output
-    - Turn on block of outputs.
-  - Turn on 1 element.
-    - Turn on multiple elements.
-  - Turn on arbitrary set of channels, outputs, and elements.
+- Execute commands.
 - Stability
-  - Ensure only one sequence executes at a time.
+  - Ensure only one sequence or command executes at a time.
   - Tolerate loss of output port.
-- Use a simple and easily understood storage format.
+- Use a simple and easily understood storage format for binary data storage.
