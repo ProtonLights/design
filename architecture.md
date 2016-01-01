@@ -1,9 +1,12 @@
 # Architecture
 
-## Login
+## Server
 
-A user can login, and then see a list of shows they're working on. The can also
+The server needs to handle the following tasks:
 
+- `/`: Admin UI
+- `/login`: Authenticate user and create a session.
+- `/layout/{layoutId}`: 
 
 ## Configs
 

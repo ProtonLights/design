@@ -2,9 +2,12 @@
 
 ## Definitions
 
+TODO: Fixtures
+
 - Channel
-  - Actual DMX channel number.
-  - Integer c, 0 <= c < 512.
+  - Actual DMX channel number and universe.
+  - Integer u, 0 <= u
+  - Integer c, 0 <= c < 512. But some things can go over 512.
 - Output
   - Represents one logical DMX channel for an element.
   - Might be 1 channel in reality, but might also be 0 or 20.
@@ -40,6 +43,7 @@
 
 ## Sequence Editor requirements
 
+swap channels
 - Create and edit layouts.
   - Graphical editor for making and arranging new elements.
 - Create and edit sequences.
@@ -59,6 +63,7 @@
     - Splitting sequences that overlap.
     - Deleting DMX data unintentionally.
   - Use simple and easily understood storage format for files.
+- Most work can be done offline.
 
 
 ## Show Execution requirements
