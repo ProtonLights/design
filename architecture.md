@@ -1,12 +1,18 @@
 # Architecture
 
+## Components
+
+- State management process
+  - Local input: message queue of actions
+  - Local output: message queue of current state
+  - External io: Pusher channel for document
+  - External io: Pusher channel for layout
+
+
+
+
 ## Server
 
-The server needs to handle the following tasks:
-
-- `/`: Admin UI
-- `/login`: Authenticate user and create a session.
-- `/layout/{layoutId}`: 
 
 ## Configs
 

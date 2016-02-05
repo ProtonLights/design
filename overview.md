@@ -3,6 +3,7 @@
 ## Definitions
 
 TODO: Fixtures
+TODO: What to do when layout changes?
 
 - Channel
   - Actual DMX channel number and universe.
@@ -62,7 +63,7 @@ swap channels
     - Multiple outputs to one channel.
     - Splitting sequences that overlap.
     - Deleting DMX data unintentionally.
-  - Use simple and easily understood storage format for files.
+  - Use simple, well-documented storage format for files.
 - Most work can be done offline.
 
 
@@ -70,7 +71,7 @@ swap channels
 
 - Send DMX data over Enttec USB DMX Pro protocol.
 - Output DMX data and play music simultaneously.
-  - Music and DMX must always be within 50 ms of each other.
+  - Music and DMX must always be within 10 ms of each other.
   - Adjustable delay of either music or DMX to keep in time.
 - Play, pause, and seek into a sequence.
 - Play sequences in order with appropriate timing and fades in/out.
