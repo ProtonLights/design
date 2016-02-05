@@ -1,15 +1,20 @@
 # Operations
 
-- Update layout
-- Merge layout
-- Update sequence section
-- Merge same sequence section
-- Merge different sequence section
+- Update sequence global data
+  - Layout
+  - Boundaries of sections
+  - Music file
+  - Sequence length
+- Merge changes to sequence metadata
+- Update section
+- Merge changes to section
 - Add new sequence
-- Redivide sequence
-- Update music
-- Merge music change
-- Update sequence metadata
-- Merge metadata change
-- Add permission to layout/sequence/section
-- Remove permission
+- Update permissions
+  - Layout
+  - Sequence metadata
+  - Sequence section
+- Merge changes to permissions
+
+# Model
+
+The canonical copy is stored on the master branch. 
