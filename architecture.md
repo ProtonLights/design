@@ -7,6 +7,8 @@
   - Local output: message queue of current state
   - External io: Pusher channel for document
   - External io: Pusher channel for layout
+- Rendering process:
+  - 
 
 
 
